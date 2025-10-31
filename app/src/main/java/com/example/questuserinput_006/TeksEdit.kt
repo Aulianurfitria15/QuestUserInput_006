@@ -97,4 +97,6 @@ fun FormDataDiri(modifier: Modifier)
                 jenis = textJK
             }
         ){
-        
+            Text(stringResource(R.string.submit))
+        }
+
