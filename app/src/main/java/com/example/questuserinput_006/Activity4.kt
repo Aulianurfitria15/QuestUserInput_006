@@ -265,4 +265,29 @@ fun FormRegistrasi(modifier: Modifier = Modifier) {
             append("Jenis Kelamin: $gender")
         }
 
-        
+        AlertDialog(
+            onDismissRequest = {
+                showDialog = false
+            },
+            title = {
+                Text("✅ Data Anda Berhasil Disimpan!")
+            },
+            text = {
+                Column {
+                    Text(text = "Berikut detail data yang telah Anda masukkan:")
+                    Spacer(modifier = Modifier.height(8.dp))
+                    Text(text = dataInput, fontWeight = FontWeight.Bold)
+                }
+            },
+            confirmButton = {
+                Button(
+                    onClick = {
+                        showDialog = false
+                    }
+                ) {
+                    Text("Tutup")
+                }
+            }
+        )
+    }
+}
