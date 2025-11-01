@@ -74,4 +74,12 @@ fun FormRegistrasi(modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        }
+        Box(modifier = Modifier.fillMaxSize()) {
+            // Background (optional)
+            Image(
+                painter = painterResource(id = R.drawable.bg_bg),
+                contentDescription = null,
+                modifier = Modifier.fillMaxSize(),
+                contentScale = ContentScale.Crop
+            )
+
