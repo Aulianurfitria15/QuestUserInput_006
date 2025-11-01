@@ -189,3 +189,13 @@ fun FormRegistrasi(modifier: Modifier = Modifier) {
                     shape = RoundedCornerShape(16.dp)
                 )
 
+                Text(
+                    text = "Jenis Kelamin",
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Black,
+                    modifier = Modifier
+                        .align(Alignment.Start)
+                        .padding(top = 12.dp, bottom = 6.dp)
+                )
+
+                
