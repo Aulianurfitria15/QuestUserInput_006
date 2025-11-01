@@ -126,4 +126,11 @@ fun FormRegistrasi(modifier: Modifier = Modifier) {
                     verticalAlignment = Alignment.CenterVertically,
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
-                    }
+                    Box(
+                        modifier = Modifier
+                            .weight(1f)
+                            .clickable {
+                                datePickerDialog.show()
+                            }
+                    ) {
+                        
