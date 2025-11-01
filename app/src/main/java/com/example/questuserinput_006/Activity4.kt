@@ -255,3 +255,14 @@ fun FormRegistrasi(modifier: Modifier = Modifier) {
         }
     }
 
+    if (showDialog) {
+        val dataInput = buildString {
+            append("Nama Lengkap: $nama\n")
+            append("Kota Asal: $kotaAsal\n")
+            append("Tanggal Lahir: $tanggalLahir\n")
+            append("RT/RW: $rt/$rw\n")
+            append("Umur: $umur tahun\n")
+            append("Jenis Kelamin: $gender")
+        }
+
+        
