@@ -178,3 +178,14 @@ fun FormRegistrasi(modifier: Modifier = Modifier) {
                     )
                 }
 
+                OutlinedTextField(
+                    value = umur,
+                    onValueChange = { umur = it },
+                    label = { Text("Umur") },
+                    singleLine = true,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(vertical = 6.dp),
+                    shape = RoundedCornerShape(16.dp)
+                )
+
