@@ -121,3 +121,9 @@ fun FormRegistrasi(modifier: Modifier = Modifier) {
                     shape = RoundedCornerShape(16.dp)
                 )
 
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.SpaceBetween
+                ) {
+                    }
