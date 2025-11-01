@@ -66,3 +66,12 @@ fun FormRegistrasi(modifier: Modifier = Modifier) {
         calendar.get(Calendar.DAY_OF_MONTH)
     )
 
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(horizontal = 24.dp, vertical = 32.dp)
+            .background(Color.Red),
+        verticalArrangement = Arrangement.Top,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        }
