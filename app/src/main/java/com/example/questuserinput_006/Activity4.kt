@@ -219,3 +219,18 @@ fun FormRegistrasi(modifier: Modifier = Modifier) {
                     }
                 }
 
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(top = 10.dp)
+                ) {
+                    Checkbox(
+                        checked = isChecked,
+                        onCheckedChange = { isChecked = it }
+                    )
+                    Text(
+                        text = "Saya setuju dengan syarat dan ketentuan yang berlaku",
+                        fontSize = 14.sp
+                    )
+                }
