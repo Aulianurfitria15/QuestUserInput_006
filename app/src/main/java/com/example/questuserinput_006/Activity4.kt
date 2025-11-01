@@ -155,3 +155,14 @@ fun FormRegistrasi(modifier: Modifier = Modifier) {
                         )
                     }
 
+                    OutlinedTextField(
+                        value = rt,
+                        onValueChange = { rt = it },
+                        label = { Text("RT") },
+                        singleLine = true,
+                        modifier = Modifier
+                            .width(80.dp)
+                            .padding(horizontal = 2.dp),
+                        shape = RoundedCornerShape(16.dp)
+                    )
+
