@@ -42,3 +42,27 @@ fun FormRegistrasi(modifier: Modifier = Modifier) {
     val context = LocalContext.current
     val calendar = Calendar.getInstance()
 
+    // Dialog kalender
+    val datePickerDialog = DatePickerDialog(
+        context,
+        { _: DatePicker, selectedYear: Int, selectedMonth: Int, selectedDay: Int ->
+            tanggalLahir = "$selectedDay/${selectedMonth + 1}/$selectedYear"
+
+            val today = Calendar.getInstance()
+            var age = today.get(Calendar.YEAR) - selectedYear
+            if (today.get(Calendar.DAY_OF_YEAR) < calendar.apply {
+                    set(
+                        selectedYear,
+                        selectedMonth,
+                        selectedDay
+                    )
+                }.get(Calendar.DAY_OF_YEAR)) {
+                age--
+            }
+            umur = age.toString()
+        },
+        calendar.get(Calendar.YEAR),
+        calendar.get(Calendar.MONTH),
+        calendar.get(Calendar.DAY_OF_MONTH)
+    )
+
