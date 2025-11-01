@@ -198,4 +198,24 @@ fun FormRegistrasi(modifier: Modifier = Modifier) {
                         .padding(top = 12.dp, bottom = 6.dp)
                 )
 
-                
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.spacedBy(20.dp)
+                ) {
+                    genderOptions.forEach { option ->
+                        Row(
+                            modifier = Modifier.selectable(
+                                selected = (gender == option),
+                                onClick = { gender = option }
+                            ),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            RadioButton(
+                                selected = (gender == option),
+                                onClick = { gender = option }
+                            )
+                            Text(option)
+                        }
+                    }
+                }
+
