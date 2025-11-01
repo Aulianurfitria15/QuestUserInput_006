@@ -83,3 +83,11 @@ fun FormRegistrasi(modifier: Modifier = Modifier) {
                 contentScale = ContentScale.Crop
             )
 
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .clip(RoundedCornerShape(24.dp))
+                    .background(Color.DarkGray.copy(alpha = 0.3f))
+                    .padding(24.dp),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
