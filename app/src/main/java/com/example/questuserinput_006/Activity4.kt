@@ -110,3 +110,14 @@ fun FormRegistrasi(modifier: Modifier = Modifier) {
                     shape = RoundedCornerShape(16.dp)
                 )
 
+                OutlinedTextField(
+                    value = kotaAsal,
+                    onValueChange = { kotaAsal = it },
+                    label = { Text("Kota Asal") },
+                    singleLine = true,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(vertical = 6.dp),
+                    shape = RoundedCornerShape(16.dp)
+                )
+
